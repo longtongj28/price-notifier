@@ -1,13 +1,13 @@
-##Price Notifier for Best Buy
+## Price Notifier for Best Buy
 
 Get an email notification whenever items you add to the program are updated in price. Checks every 6 hours when your computer is on.
 
-##Installing:
+## Installing:
 Make sure Python is installed on your computer
 
 git clone
 
-cd
+cd price-notifier
 
 pip install -r requirements.txt
 
