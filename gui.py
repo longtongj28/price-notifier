@@ -2,19 +2,26 @@ import email
 import tkinter as tk
 from turtle import window_height, window_width
 from tkinter import ttk
+from getter import Getter
 from main import main
 
+g = Getter()
 
+"""Test action"""
 def test():
     print("howdy")
+
+"""Action here used for when enter to activate the getProductData"""
+def enterAction(text):
+    g.getProductData()
 
 
 
 
 window =  tk.Tk()
 window.title("Best Buy Price Notifier")
-window_width = 800
-window_height = 600
+window_width = 400
+window_height = 300
 
 """Get the screen dimensions"""
 screen_width = window.winfo_screenwidth()
@@ -37,8 +44,13 @@ textbox = ttk.Entry(topFrame, textvariable=text)
 textbox.grid(column=1, row=1, sticky=tk.W)
 
 """Creating a button to enter"""
-enterButton = ttk.Button(topFrame, text='Enter', command=test)
+enterButton = ttk.Button(topFrame, text='Enter', command=enterAction(textbox))
 enterButton.grid(column=0, row=1, padx=10, pady= 10)
+
+"""Creating an entry for the email"""
+emailText = tk.StringVar()
+emailBox = ttk.Entry(topFrame, textvariable=emailText)
+emailBox.grid(column=1, row=2, sticky=tk.W)
 
 """Button for configuring email"""
 emailButton = ttk.Button(topFrame, text="Email", command=test)
