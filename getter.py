@@ -1,8 +1,6 @@
 from os.path import exists
 import requests as r
 import json
-from os.path import exists
-
 
 class Getter:
     def __init__(self):
