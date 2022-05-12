@@ -1,8 +1,10 @@
 from getter import Getter
 from validators import url
+from gui import GUI
 
 def main():
     getter = Getter()
+    gui = GUI()
     user_input = input("Enter the best buy URL: ")
     valid_url = url(user_input)
     bb_url = user_input.__contains__("bestbuy")
@@ -12,6 +14,9 @@ def main():
         getter.getProductData(user_input)
     else:
         print("Please verify the url.")
+
+
+
 
 if __name__ == '__main__':
     main()
