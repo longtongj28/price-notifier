@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+            "name": "Apple - AirPods with Charging Case (2nd generation) - White",
+            "sku": 6084400,
+            "On_Sale": true,
+            "clearance": false,
+            "regularPrice": 129.99,
+            "salePrice": 99.99
+        },
+        {
+            "name": "ASUS - Vivobook 15.6\" Touchscreen Laptop - Intel 11th Gen i3 - 8GB Memory - 256GB PCIE SSD - Slate Grey",
+            "sku": 6469402,
+            "On_Sale": true,
+            "clearance": false,
+            "regularPrice": 549.99,
+            "salePrice": 399.99
+        },
+        {
+            "name": "Samsung - 43\" Class 8000 Series LED 4K UHD Smart Tizen TV",
+            "sku": 6452966,
+            "On_Sale": true,
+            "clearance": false,
+            "regularPrice": 379.99,
+            "salePrice": 349.99
+        }
+    ]
+}
